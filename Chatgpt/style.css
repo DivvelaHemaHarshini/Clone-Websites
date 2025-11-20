@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 0.4fr 1fr;
+    grid-template-rows: 0.3fr 1fr 1fr;
+    grid-template-areas: "menu heading"
+                          "menu welcome"
+                          "menu prompt";
+                                      
+}
+.menu{
+    grid-area: menu;
+}
+.heading{
+    grid-area: heading;
+    display: flex;
+    align-items: center;
+}
+.welcome{
+    grid-area: welcome;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.prompt{
+    grid-area: prompt;
+    position: relative;
+}
+.cards{
+    display: flex;
+    width: 55rem;
+    flex-wrap: wrap;
+    
+}
+.card{
+    border: 1px solid black;
+    width: 25rem;
+    height: 5rem;
+    margin: 1rem;
+    border-radius: 0.5rem;
+    padding-left: 1rem;
+    padding-top: 1rem;
+    
+}
+#input-field{
+    width: 52rem;
+    height: 3rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    font-size: 1rem;
+}
+
+#shake{
+    position: absolute;
+    bottom: 4rem;
+    right: 16rem;
+}
+.input{
+    padding-left: 1rem;
+}
+.newchat{
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+#newchat{
+    width: 8rem;
+}
+.dates{
+    margin-left: 2rem;
+}
+.date1{
+    margin-bottom: 2rem;
+}
+.dates p{
+    color: gray;
+}
+.upgrade{
+    display: flex;
+    position: relative;
+}
+#ugspark{
+    position: absolute;
+top: 25rem;
+    
+}
+.textup{
+    margin-left: 3rem;
+    
+}
+.info{
+    display: flex;
+    position:absolute;
+   top: 42rem;
+}
+#button-info{
+    border-radius: 50%;
+    background-color: rgb(140, 76, 200);
+    font-size: 1rem;
+    border: none;
+    color: white;
+    padding: 0.3rem;
+}
+#head-info{
+    margin-left: 5px;
+}
